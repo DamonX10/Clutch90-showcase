@@ -4,53 +4,47 @@
 
 ### A better home for your league.
 
-League tables · Fixtures · Results · Player achievements
+Tables · Tournaments · Top performers · Shareable moments
 
 **Created by [DamonX10](https://github.com/DamonX10)**
 
-Working prototype · Private source · Public project showcase
+[Try Clutch 90](https://clutch90-astra22.purposesf47.chatgpt.site/)
+
+Shared-testing version · Private source · Public showcase
 
 </div>
 
----
-
 ## The idea
 
-A sporting competition deserves more than a basic spreadsheet. Clutch 90 brings standings, match results, and player statistics into a clear, modern dashboard, so organizers and fans can follow the story of a season.
+Clutch 90 gives sporting competitions a clear, modern home. Organizers record results, players see their achievements, and friends follow the season through a simple spectator link.
 
-The long-term vision is to support many kinds of sporting competitions. The current prototype provides a configurable league format, with football statistics as a central feature.
+## What you can try
 
-## Built into the prototype
-
-| Feature | What it brings to a league |
+| Feature | What it does |
 | --- | --- |
-| **Automatic league tables** | Points, wins, draws, losses, score difference, and recent form update as results are entered. |
-| **Top 10 goalscorers** | A dedicated ranking for the players finding the net. |
-| **Top 10 assist providers** | Recognition for the players creating the chances. |
-| **Team clean sheets** | Automatic credit for every completed match without conceding a goal. A 0–0 gives both teams a clean sheet. |
-| **Fixtures and results** | Create a single round-robin schedule, enter scores, and correct results when needed. |
-| **Custom competitions** | Set up 2–32 teams, name the season, and choose win/draw/loss points. |
-| **Team views** | Explore individual results and compare overall, home, and away performances. |
-| **Saved progress** | Competitions persist between visits, with checks to protect newer results from stale edits. |
+| Personal accounts | Sign in with ChatGPT, personalize your profile, and organize separate workspaces. |
+| Organizer and spectator roles | Invite people with the right permissions, change their role, or revoke access. |
+| A link for every league | Publish a view-only league page anyone can open. Hide it again whenever needed. |
+| Automatic standings | Results update points, wins, score difference and recent form. |
+| Top performers | Top-ten goalscorers, assists and team clean sheets; basketball and tennis statistics adapt to the sport. |
+| Tournament formats | Home-and-away leagues, knockout brackets, groups into knockouts, league playoffs, aggregate ties and game series. |
+| Editable presets | UCL-style league phases, classic UCL groups, NBA playoffs/play-in, and Grand Slam singles including Wimbledon. |
+| Shareable cards | Export original Clutch 90 top 5, 7 or 10 cards in square and story sizes. |
+| Season honors | Completed competitions reveal champion, scoring, playmaker and football clean-sheet award cards. |
+| Saved progress | Cloud storage and conflict checks protect recorded results from stale edits. |
 
-## Designed for the season
+Knockout draws support up to 128 entrants. Presets are modifiable and explain their scope in the app. They cover core competition structures; official association restrictions, some tiebreakers, retirements and tournament administration are not fully automated. They are independent presets with no official affiliation.
 
-A navy and lime visual identity, responsive layouts, and dedicated statistics views keep the table and its standout performers easy to find. Fictional sample competitions demonstrate the app without presenting sample results as real sporting data.
+## Try it with friends
 
-## Project status
+Open the test app to explore fictional demos. Sign in to create your own competition. In **Share**, enable the public league link and send that link to friends. Spectators can follow the table, fixtures and performances without editing anything. Use **Workspace & access** when someone should help organize.
 
-Clutch 90 is a working prototype under active development. Match results and player contributions are entered by an organizer. Leaderboards display up to ten eligible players as statistics become available.
+Statistics come from entered match results, not a live sports feed. Images capture a moment; the league link shows current saved information.
 
-The current scoring model supports configurable points and score-difference rankings. More specialized sporting rules and a live results feed are future possibilities, rather than completed features.
+## Built and tested
 
-## Behind the build
+The navy, lime and white interface is built with **React, TypeScript, Tailwind CSS, Cloudflare Workers and D1**. Validation includes **45 passing domain and permission tests**, API checks, and desktop/phone-sized browser tests. Phone testing uses WebKit and Chrome emulation; physical-device testing and App Store release are still ahead.
 
-Built with **React, TypeScript, Tailwind CSS, and Cloudflare D1**. The league calculations are covered by 18 passing automated tests, including result corrections, goals and assists, and team clean sheets. The application has also passed type checking, a production build, and local API checks.
+Product idea and direction by **DamonX10**, with AI-assisted development.
 
-The product idea and direction are by **DamonX10**, with AI-assisted development.
-
-## About this repository
-
-This public repository introduces the project and its features. The full application source and hosted development preview are private.
-
-Follow the creator: **[github.com/DamonX10](https://github.com/DamonX10)**
+This repository contains the public project description. The full source repository remains private.
